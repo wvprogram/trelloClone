@@ -1,0 +1,257 @@
+:root {
+    --clr-light-blue: rgb(0, 199, 229);     /* background for button*/
+    --clr-blue: rgb(0, 101, 255);           /* trello blue*/
+    --clr-dark-blue: rgb(7, 71, 166);       /* links color */
+    --clr-darker-blue: rgb(23, 43, 77);     /* nav text*/
+    --clr-darkest-blue: rgb(9,30,66);       /* regular text*/
+    
+    --clr-white: rgb(255, 255, 255);    
+
+    --clr-orange: rgb(255,143,115);         /* color for slider */
+    --clr-lighter-blue: rgb(121,226,242);   /* color for slider */
+    --clr-green: rgb(121, 242, 192);        /* color for slider */
+    --clr-yello: rgb(255, 227, 128);        /* color for slider */
+}
+
+
+/********** General Styling **********/
+body {
+    font-size: 1rem;
+    background-color: var(--clr-white);
+    color: var(--clr-darkest-blue);
+}
+
+/***** Navigation Bar *****/
+/* header {
+    box-shadow: 0rem 3rem 2rem 0px var(--clr-darkest-blue);
+}
+
+header:hover {
+    box-shadow: 0rem 3rem 2rem 0px var(--clr-darkest-blue);
+} */
+
+.nav__container {
+    max-width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Logo */
+.nav__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.nav__logo i {
+    color: var(--clr-dark-blue);
+    background: var(--clr-white);
+}
+
+.nav__logo-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__logo span:first-child {
+    font-size: 0.7rem;
+    color: var(--clr-dark-blue);
+}
+
+/* Navigation Links */
+.nav__links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__links ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    text-decoration: none;
+    color: var(--clr-darkest-blue);
+}
+
+.nav__links ul li a:hover {
+    color: var(--clr-blue);
+}
+
+.nav__links ul li i {
+    font-size: 0.5rem;
+}
+
+/* Navigation Buttons */
+.nav__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    gap: 1.2rem;
+}
+
+.nav__button-login {
+    border: none;
+    background: var(--clr-white);
+    color: var(--clr-darkest-blue);
+    font-size: 1.2rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.nav__button-free {
+    border: 1px solid var(--clr-blue);
+    background: var(--clr-blue);
+    color: var(--clr-white);
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 0 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.nav__button-free:hover {
+    cursor: pointer;
+    border: 1px solid var(--clr-dark-blue);
+    background: var(--clr-dark-blue);
+    transition: background 0.3s ease-in-out;
+}
+
+
+/***** Head Title Section *****/
+/* Head Background */
+.head__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(105,69,171,1) 0%, rgba(233,80,180,1) 100%);
+}
+
+.trello__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 65%;
+    margin: 5rem 0 0 0;
+}
+
+/* Head Text */
+.head__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--clr-white);
+    line-height: 3.5rem;
+    padding: 3rem;
+}
+
+.head__title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.head__title p {
+    font-size: 1.2rem;
+}
+
+/* Head Input and Button */
+.head__input input {
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 45%;
+    font-weight: 600;
+    margin-right: 1rem;
+    border: none;
+}
+
+.head__input input:focus {
+    border: 1px solid var(--clr-white);
+    outline: var(--clr-white);
+}
+
+.head__input button {
+    border: 1px solid var(--clr-blue);
+    background: var(--clr-blue);
+    color: var(--clr-white);
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.head__input button:hover {
+    cursor: pointer;
+    border: 1px solid var(--clr-dark-blue);
+    background: var(--clr-dark-blue);
+    transition: background 0.3s ease-in-out;
+}
+
+/* Head Video Link */
+.head__video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.head__video:hover {
+    cursor: pointer;
+    opacity: 1;
+    gap: 0.3rem;
+    transition: opacity 0.3s ease-in-out, gap 3s ease-in-out;
+}
+
+.head__video a {
+    font-size: 1rem;
+    color: var(--clr-white);
+    margin-right: 0.5rem;
+}
+
+.head__video a:hover {
+    opacity: 1;
+}
+
+.head__video i {
+    font-size: 1.4rem;
+}
+
+/* Head Image */
+.head__img {
+    width: 100%;
+}
+
+.head__img img {
+    width: 100%;
+}
