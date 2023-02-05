@@ -326,51 +326,70 @@ header:hover {
     gap: 1.5rem;
 }
 
-.accordion__item-background--standard {
+.accordion__item-background--off {
     width: 100%;
     padding: 1rem 1rem 1rem 1.5rem;
+    cursor: pointer;
 }
 
-.accordion__item-detail--standard h3 {
+.accordion__item-detail--off {
+    cursor: pointer;
+}
+
+.accordion__item-detail--off h3 {
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
-.accordion__item-detail--standard p {
+.accordion__item-detail--off p {
     line-height: 1.5rem;
 }
 
-.accordion__item-background {
+.accordion__item-background--on {
     width: 100%;
     padding-left: 0.5rem;
     border-radius: 5px;
     box-shadow: 0 0.3rem 0.8rem 0.1rem var(--clr-box-blue);
     background: var(--clr-light-blue);
+    cursor: pointer;
 }
 
-.accordion__item-detail {
+.accordion__item-detail--on {
     padding: 1rem;
     border-radius: 0 5px 5px 0;
     background: var(--clr-white);
 }
 
-.accordion__item-detail h3 {
+.accordion__item-detail--on h3 {
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
-.accordion__item-detail p {
+.accordion__item-detail--on p {
     line-height: 1.5rem;
 }
 
 /* Accorion Image */
-.accordion__item-img {
+.accordion__item-images {
     width: 55%;
 }
 
-.accordion__item-img img {
+.accordion__item-img-visible {
+    width: 100%;
+    display: block;
+}
+
+.accordion__item-img-hidden {
+    display: none;
+}
+
+.accordion__image {
     width: 100%;
     height: 100%;
     object-fit: fill;
     margin: 0;
+}
+
+.image-onload {
+    display: block;
 }
