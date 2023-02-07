@@ -27,13 +27,14 @@ body {
 }
 
 /***** Navigation Bar *****/
-/* header {
-    box-shadow: 0rem 3rem 2rem 0px var(--clr-darkest-blue);
+header {
+    width: 100%;
+    background: var(--clr-white);
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 5px 5px 1px rgba(9,30,66,0.10);
 }
-
-header:hover {
-    box-shadow: 0rem 3rem 2rem 0px var(--clr-darkest-blue);
-} */
 
 .nav__container {
     max-width: 100%;
