@@ -11,7 +11,11 @@
     --clr-orange: rgb(255,143,115);             /* color for slider */
     --clr-lighter-blue: rgb(121,226,242);       /* color for slider */
     --clr-green: rgb(121, 242, 192);            /* color for slider */
-    --clr-yello: rgb(255, 227, 128);            /* color for slider */
+    --clr-yellow: rgb(255, 227, 128);            /* color for slider */
+    --clr-purple: #9387D3;
+    --clr-button-hover: #9ECBF7;
+
+    font-weight: 1 1000;
 }
 
 
@@ -268,7 +272,7 @@ header:hover {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(255,255,255,1) 0%, rgba(230,252,255,1) 100%);
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 /* Accordion Header */
@@ -392,4 +396,301 @@ header:hover {
 
 .image-onload {
     display: block;
+}
+
+
+/***** Carousel Section *****/
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.carousel__container {
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* carousel title */
+.carousel__title h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.carousel__title h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* carousel item display */
+.carousel__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.carousel__item {
+    border-radius: 5px;
+    width: 95%;
+    box-shadow: 0px 10px 14px 3px rgba(9,30,66,0.19);
+    cursor: pointer;
+    position: relative;
+}
+
+.carousel__item-bg {
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 3rem;
+}
+
+.carousel__item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    background: var(--clr-white);
+    border-radius: 0 0 5px 5px;
+    padding: 2.5rem 1rem 1.5rem;
+}
+
+.carousel__item-details h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.carousel__item-details p {
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+}
+
+.bg__clr-orange {
+    background: var(--clr-orange);
+}
+
+.bg__clr-blue {
+    background: var(--clr-lighter-blue);
+}
+
+.bg__clr-green {
+    background: var(--clr-green);
+}
+
+.bg__clr-yellow {
+    background: var(--clr-yellow);
+}
+
+/* carousel details and button */
+.carousel__detail {
+    display: flex;
+    gap: 5rem;
+}
+
+.carousel__detail p {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.carousel__button {
+    width: 15rem;
+}
+
+.carousel__button button {
+    border: 1px solid var(--clr-blue);
+    border-radius: 5px;
+    background: var(--clr-white);
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: var(--clr-darker-blue);
+    cursor: pointer;
+}
+
+.carousel__button button:hover {
+    background: var(--clr-button-hover);
+    transition: background 0.3s ease-in-out;
+}
+
+/* carousel icon */
+.carousel__item-icon {
+    font-size: 2.3rem;
+    background: var(--clr-white);
+    padding: 8px;
+    width: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    top: 1.4rem;
+    left: 1rem;
+}
+
+.disk__icon {
+    color: var(--clr-orange);
+}
+
+.cloud__icon {
+    color: var(--clr-lighter-blue);
+}
+
+.speaker__icon {
+    color: var(--clr-green);
+}
+
+.table__icon {
+    color: var(--clr-yellow);
+}
+
+
+/***** Picture Section *****/
+.picture {
+    background: linear-gradient(90deg, rgba(0,120,246,1) 0%, rgba(0,181,218,1) 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* picture title */
+.picture__title {
+    margin: 3rem 0;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture__title h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.picture__title p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.picture__title-button {
+    width: fit-content;
+}
+
+.picture__title-button button {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    color: var(--clr-darker-blue);
+    border: 0.5px solid var(--clr-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.picture__title-button button:hover {
+    background: var(--clr-button-hover);
+    transition: background 0.3s ease-in-out;
+}
+
+/* picture details */
+.picture__img-container--one {
+    width: 80%;
+    border-radius: 10px;
+    background: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0px 10px 14px 3px rgba(9,30,66,0.19);
+}
+
+.picture__img {
+    display: flex;
+    gap: 3rem;
+}
+
+.picture__img-details--deadline {
+    padding: 1.5rem;
+}
+
+.picture__img-details--title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.picture__img-details--title i {
+    font-size: 1.8rem;
+    color: var(--clr-purple);
+}
+
+.picture__img-details--title h3 {
+    font-weight: 500;
+}
+
+.picture__img-details--deadline p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.picture__img-details--deadline a {
+    font-size: 1.25rem;
+    color: var(--clr-dark-blue);
+}
+
+.picture__img-container--two {
+    width: 80%;
+    border-radius: 10px;
+    background: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: absolute;
+    top: 750px;
+    box-shadow: 0px 10px 14px 3px rgba(9,30,66,0.19);
+}
+
+
+/***** Features Section *****/
+.features {
+    width: 100%;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.features__container {
+    width: 65%;
+}
+
+.features__title {
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.features__title h3 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.features__title h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.features__title p {
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
